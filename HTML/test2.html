@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>HTML Form Excercise</h1>
+</head>
+<body>
+<form>
+<p><b>Contact form</b></p><br>
+Your Name*: &nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="yourname"><br>
+E-mail*:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="email"><br>
+Phone Number: <input type="text" name="pnumber"><br>
+Website*:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp <input type="text" name="web" value="http://"><br>
+<p>Comments*:</p>
+<textarea name="comments" rows="5" cols="60">
+</textarea><br>
+<p><strong>Text Field</strong></p>
+Your name:&nbsp<input type="text" name="name1">
+<p><strong>Password Field</strong></p>
+Password:&nbsp<input type="text" name="pass">
+<p><b>Radio Button</b></p>
+<p>Do you like pizza?</p>
+<input type="radio" name="bool" value="Yes">yes<br>
+<input type="radio" name="bool" value="No">No<br>
+<input type="radio" name="bool" value="Maybe">Maybe<br>
+<input type="radio" name="bool" value="Nevertried">Never Tried<br>
+<p><b>Check Box</b></p>
+<input type="checkbox" name="chk" value="Yes I LIke your services">Check this box if you like our services<br>
+<p><b>Text Area</b></p>
+<textarea name="textarea" rows="5" cols="50">
+</textarea>
+<br>
+<p><b>I Like</b></p>
+<select name="Veg" size="4" multiple>
+<option value="mashrooms">Mashrooms</option>
+<option value="tomato">Tomato</option>
+<option value="potato">Potato</option>
+<option value="carrot">Carrot</option>
+<option value="apple">apple</option>
+</select><br>
+<p><b>Menu</b></p>
+<p>Choose your fav color</p>
+<select name="favcolor">
+<option value="red">red</option>
+<option value="green">green</option>
+<option value="yellow">Yellow</option>
+<option value="voilet">Voilet</option>
+</select>
+<br>
+<p><strong>Attach File</strong></p>
+<input type="text" name="file_name" id="file_name">
+<input type="file" name="img1" id="img1" onchange="document.getElementById('file_name').value=this.value"><br>
+<p><b>Buttons</b></p>
+<p>
+<input type="reset" value="Reset">
+<input type="submit" value="Submit">
+</p>
+</form>
+</body>
+</html>
