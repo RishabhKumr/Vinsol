@@ -1,0 +1,90 @@
+.header
+{
+  width:100%;
+  font-family:tahoma;
+  font-size:13px;
+  color:black;
+  text-align:right;
+  height:75px;
+  border-bottom:solid 2px #db2927;
+}
+h1
+{
+  font-family:tahoma;
+  font-size:18px;
+  color:#2c286d;
+  position:relative;
+  right:-300px;
+}
+a
+{
+  color:blue; text-decoration:none;
+}
+li
+{
+  list-style:none;
+  padding-bottom:10px;
+}
+.form
+{
+  color:#6f6f6f;
+  font-family:tamoha;
+  font-size:13px;
+}
+.box
+{
+  width:600px;
+  background:#ececec;
+  border:solid 1px #bcbcbc;
+  position:relative;
+  right:-300px;	
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:30px;
+  padding-right:30px;
+}
+.address
+{
+  background:white;
+  width:360px;
+  height:135px;
+  border:solid 1px #b9b9b9;
+}
+.select_date_of_birth
+{
+  background:white;
+  font-family:tamoha;
+  color:#6f6f6f;
+  font-size:13px;
+  width:110px;
+}
+.textbox
+{
+  background:white;
+  width:360px;
+  height:25px;
+  border:solid 1px #b9b9b9;
+}
+.labels
+{
+  display:inline-block;
+  width:100px;
+  float:left;
+  text-align:right;
+  padding-right:20px;
+  font-family:tamoha;
+  font-size:14px;
+  color:black;
+}
+.button
+{
+  position:relative;
+  right:-120px;
+  font-family:tamoha;
+  font-size:14px;
+  color:white;
+  background:#dc2927;
+  border:solid 1px #a10200;
+  width:130px;
+  height:32px;
+}

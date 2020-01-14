@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="mystyle2.css">
+</head>
+<body>
+
+<div class="header">
+  <img src="vinsol-logo.png" alt="vinsol" align="left"/><br/><br/><br/>
+  Email us at:<a href="sale@vinsol.com">sales@vinsol.com</a> &nbsp; &nbsp;  Skype:<a href="www.vinsol.com">Vinsol</a>
+</div><br/><br/>
+<h1>Please fill the form below</h1>
+  <div class="box">
+    <form name="my form" action="" method="get" class="form">
+    <ul>
+      <li>  
+	    <label for="fname" class="labels">First Name</label>
+		<input type="text" name="name" id="fname" class="textbox"/>
+	  </li>
+	  <li>
+		<label for="lname" class="labels">Last Name</label>
+		<input type="text" name="lname" id="lname" class="textbox"/>
+	  </li>
+  	  <li>
+	  	<label for="email" class="labels">Email Address</label>
+	    <input type="email" name="email" id="email" class="textbox"/>
+	  </li>
+  	  <li>
+	  	<label for="pass" class="labels">Password</label>
+		<input type="password" id="pass" class="textbox"/>
+	  </li>
+	  <li>
+		<label for="gender" class="labels">Gender</label>
+		<input type="radio" name="sex" value="male" class="radio"/>Male
+		<input type="radio" name="sex" value="female"class="radio"/>Female
+	  </li>
+  	  <li>
+	  	<label for="date" class="labels">Date Of Birth</label>
+		<select class="select_date_of_birth">
+		  <option name="date"selected="selected">DD</option>
+		  <option name="date">01</option>
+		  <option name="date">02</option>
+		</select>
+		<select class="select_date_of_birth">
+  		  <option name="month"selected="selected">MM</option>
+  		  <option name="month">01</option>				
+  		  <option name="month">02</option>				
+  		</select>
+  		<select class="select_date_of_birth">
+  		  <option name="year" selected="selected">yy</option>
+          <option name="year">81</option>
+  		  <option name="year">82</option>
+  		</select>				
+		</li>
+		<li>
+		  <label class="labels">Address</label>
+			<textarea name="address" class="address"></textarea>
+		</li>
+		<li>
+		  <input type="submit" value="submit details" class="button"/>
+		</li>
+	</ul>	
+    </form>
+</div>
+</body>
+</html>			

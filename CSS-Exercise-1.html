@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+font-family:"tahoma";
+}
+.header{
+background-color:#b2e7ff;
+color:black;
+padding:15px;
+width:100%;
+text-align:center;
+margin-right:10px;
+border-bottom:2px solid #0ab1ff;
+}
+.main{
+  position:relative;
+  width:100%;
+  height:490px;
+  border:1px solid black;
+}
+.main > div{
+  float:left;
+  height:450px;
+}
+.d1{
+  width:23%;
+  background-color:#0ab1ff;
+  border:2px solid #b2e7ff;
+  padding:25px 25px 10px 10px;
+}
+.d2{
+  width:72%;
+  background-color:#ededed;
+  border:1px solid #0ab1ff;
+  padding:20px 11px;
+}
+.footer{
+position:absolute;
+background-color:#3cff78;
+color:black;
+border-bottom:2px solid #0ab1ff;
+width:100%;
+text-align:center;
+padding:15px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>This is a header</h1>
+</div>
+<div class="main">
+<div class="d1">
+<h1 style="font-size:18px; text-align:left;">Fixed Section 1 with padding and margins</h1><br>
+<div class="link" style="color:white; text-align:justify;">
+<ul style="color:white;">
+<li><a href="#nav1" style="text-decoration:none; color:white;">Navigation link 1</a></li><br>
+<li><a href="#nav2" style="text-decoration:none; color:white;">Navigation link 2</a></li><br>
+<li><a href="#nav3" style="text-decoration:none; color:white;">Navigation link 3</a></li><br>
+<li><a href="#nav4" style="text-decoration:none; color:white;">Navigation link 4</a></li><br>
+<li><a href="#nav5" style="text-decoration:none; color:white;">Navigation link 5</a></li>
+</ul>
+<p style="font-size:12px; color:black;">The Android sensor framework provides several methods that make it easy for you to determine at runtime which sensors are on a device. The API also provides methods that let you determine the capabilities of each sensor, such as its maximum range, its resolution, and its power requirements.
+To identify the sensors that are on a device you first need to get a reference to the sensor service.</p>
+</div>
+</div>
+<div class="d2">
+<h1 style="font-size:24px; text-align:left;">Fixed Section 2 with padding and margins</h1>
+<p style="color:#802525 font-size:14px;">While sensor availability varies from device to device, it can also vary between Android versions. This is because the Android sensors have been introduced over the course of several platform releases. For example, many sensors were introduced in Android 1.5 (API Level 3), but some were not implemented and were not available for use until Android 2.3 (API Level 9). Likewise, several sensors were introduced in Android 2.3 (API Level 9) and Android 4.0 (API Level 14). Two sensors have been deprecated and replaced by newer, better sensors.
+
+Table 2 summarizes the availability of each sensor on a platform-by-platform basis. Only four platforms are listed because those are the platforms that involved sensor changes. Sensors that are listed as deprecated are still available on subsequent platforms (provided the sensor is present on a device), which is in line with Android's forward compatibility policy.</p>
+</div>
+</div>
+<div class="footer">
+<h1>This is a footer</h1>
+</div>
+</body></html>
