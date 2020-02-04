@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Hollywood
+comment1.params=
+comment1.target=java.lang.String\ isHit()
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=n\ y\ lang\ gen\ Rd
+comment3.target=Hollywood(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+numComments=4
