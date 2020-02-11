@@ -9,12 +9,7 @@ public class Movie
     Movie()
     {
     }
-    public String getName(String name,String year,String language,String genre,String Releasedate,String MovieType)
-    {
-        return name;
-   
-    }
-    /*
+
     Movie(String name,String year,String language,String genre,String Releasedate,String MovieType)
     {
         this.name = name;
@@ -24,5 +19,5 @@ public class Movie
         this.Releasedate = Releasedate;
         this.MovieType = MovieType;
     }
-    */
+    
 }

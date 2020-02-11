@@ -1,21 +1,21 @@
 import java.util.*;
 class MovieApp
 {   
-    foodType fd;
-    LinkedList<Movie> li = new LinkedList<Movie>();
-    LinkedList<String> bolly,holly,tolly;
+    foodType food;
+    LinkedList<Movie> list = new LinkedList<Movie>();
+    LinkedList<String> bollywood_list,hollywood_list,tollywood_list;
     MovieApp()
     {
-        li.add(new Movie("Bahubali","2015","Hindi","Action","2014","Bollywood"));
-        li.add(new Movie("FF9","2015","Hindi","Action","2015","Hollywood"));
-        li.add(new Movie("Tamilki","2015","Tamil","Action","2015","Tollywood"));
-        li.add(new Movie("Hindii","2015","Hindi","Action","2016","Bollywood"));
+        list.add(new Movie("Bahubali","2015","Hindi","Action","2014","Bollywood"));
+        list.add(new Movie("FF9","2015","Hindi","Action","2015","Hollywood"));
+        list.add(new Movie("Tamilki","2015","Tamil","Action","2015","Tollywood"));
+        list.add(new Movie("Hindii","2015","Hindi","Action","2016","Bollywood"));
     }
     //Display the name of Movie and its Type
     void display()
      {
         System.out.println("Movie Name\tMovie Type");
-        for(Movie data : li)
+        for(Movie data : list)
         {
            System.out.println(data.name+"\t"+data.MovieType);
         }
@@ -24,60 +24,60 @@ class MovieApp
      public void getfood(String MovieType)
      {
          
-        foodType f = null;
+        foodType tempFood = null;
         if(MovieType.equals("Tollywood"))
         {
-             f = fd.Dosa;
+             tempFood = food.Dosa;
         }
         else if(MovieType.equals("Bollywood"))
         {
-             f = fd.Dal_Makhni;
+             tempFood = food.Dal_Makhni;
         }
         else if(MovieType.equals("Hollywood"))
         {
-            f = fd.Pepper_Stack;
+            tempFood = food.Pepper_Stack;
         }
         else
         {
-            f = null;
+            tempFood = null;
         }
-        System.out.println(f);
+        System.out.println(tempFood);
     }
     //Display MovieList Type wise
     public void displayTypeWise()
     {
-        bolly=new LinkedList<String>();
-        holly=new LinkedList<String>();
-        tolly=new LinkedList<String>();
-        for(Movie data : li)
+        bollywood_list=new LinkedList<String>();
+        hollywood_list=new LinkedList<String>();
+        tollywood_list=new LinkedList<String>();
+        for(Movie data : list)
         {
             if(data.MovieType.equals("Bollywood"))
             {
-                bolly.add(data.name);
+                bollywood_list.add(data.name);
             }
             else if(data.MovieType.equals("Hollywood"))
             {
-                holly.add(data.name);
+                hollywood_list.add(data.name);
             }
             else if(data.MovieType.equals("Tollywood"))
             {
-                tolly.add(data.name);
+                tollywood_list.add(data.name);
             }
         }
         System.out.println("<------Bollywood---->");
-        for(String str : bolly)
+        for(String str : bollywood_list)
         {
             System.out.println(str);
             isHit();
         }
         System.out.println("<------Hollywood---->");
-        for(String str : holly)
+        for(String str : hollywood_list)
         {
             System.out.println(str);
             isHit();
         }
         System.out.println("<------Tollywood---->");
-        for(String str : tolly)
+        for(String str : tollywood_list)
         {
             System.out.println(str);
             isHit();
@@ -88,8 +88,8 @@ class MovieApp
     {
       //Movie data;
       Random rd = new Random();
-      boolean b = rd.nextBoolean();
-      String isBlockBuster = String.valueOf(b);
+      boolean bool = rd.nextBoolean();
+      String isBlockBuster = String.valueOf(bool);
       System.out.println("Movie is a blockbuster:----->\t"+isBlockBuster+"\n");
     }
     //Display cost of production
