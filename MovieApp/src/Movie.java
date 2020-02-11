@@ -9,7 +9,11 @@ public class Movie
     Movie()
     {
     }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 88f1f9a62cfcfbb947fc1e0a4c7f7224cb99934f
     Movie(String name,String year,String language,String genre,String Releasedate,String MovieType)
     {
         this.name = name;
