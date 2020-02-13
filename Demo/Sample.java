@@ -7,10 +7,10 @@ public class Sample
     {
         lst = new ArrayList<String>();
     }
-    public void peek()
+    public String peek()
     {
         String a =  lst.get(lst.size() - 1);
-        System.out.println(a);
+        return a;
     }  
     public void push(String data)
     {
@@ -55,7 +55,8 @@ public class Sample
         {
             case 1:
             System.out.println("Peeking first element:-");
-            s.peek();
+            String st  =  s.peek();
+	    System.out.print(st);
             break;
             case 2: 
             System.out.println("Poping first element:-"+s.pop());
