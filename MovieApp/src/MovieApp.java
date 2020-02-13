@@ -3,13 +3,14 @@ class MovieApp
 {   
     FoodType food;
     LinkedList<Movie> list = new LinkedList<Movie>();
-    LinkedList<String> bollywood_list,hollywood_list,tollywood_list;
+    LinkedList<String> bollywood,hollywood,tollywood;
+    Random random = new Random();
     MovieApp()
     {
-        list.add(new Movie("Bahubali","2015","Hindi","Action","2014","Bollywood"));
-        list.add(new Movie("FF9","2015","Hindi","Action","2015","Hollywood"));
-        list.add(new Movie("Tamilki","2015","Tamil","Action","2015","Tollywood"));
-        list.add(new Movie("Hindii","2015","Hindi","Action","2016","Bollywood"));
+        list.add(new Movie("Bahubali","2015","Hindi","Action","2014","Bollywood",random.nextBoolean()));
+        list.add(new Movie("FF9","2015","Hindi","Action","2015","Hollywood",random.nextBoolean()));
+        list.add(new Movie("Tamilki","2015","Tamil","Action","2015","Tollywood",random.nextBoolean()));
+        list.add(new Movie("Hindii","2015","Hindi","Action","2016","Bollywood",random.nextBoolean()));
     }
     //Display the name of Movie and its Type
     void display()
@@ -47,51 +48,49 @@ class MovieApp
     //Display MovieList Type wise
     public void displayTypeWise()
     {
-        bollywood_list=new LinkedList<String>();
-        hollywood_list=new LinkedList<String>();
-        tollywood_list=new LinkedList<String>();
+        bollywood=new LinkedList<String>();
+        hollywood=new LinkedList<String>();
+        tollywood=new LinkedList<String>();
         for(Movie data : list)
         {
             if(data.movieType.equals("Bollywood"))
             {
-                bollywood_list.add(data.name);
+                bollywood.add(data.name);
             }
             else if(data.movieType.equals("Hollywood"))
             {
-                hollywood_list.add(data.name);
+                hollywood.add(data.name);
             }
             else if(data.movieType.equals("Tollywood"))
             {
-                tollywood_list.add(data.name);
+                tollywood.add(data.name);
             }
         }
         System.out.println("<------Bollywood---->");
-        for(String str : bollywood_list)
+        for(String str : bollywood)
         {
             System.out.println(str);
-            isHit();
         }
         System.out.println("<------Hollywood---->");
-        for(String str : hollywood_list)
+        for(String str : hollywood)
         {
             System.out.println(str);
-            isHit();
+            
         }
         System.out.println("<------Tollywood---->");
-        for(String str : tollywood_list)
+        for(String str : tollywood)
         {
             System.out.println(str);
-            isHit();
         }
     }
     //Display is Movie hit 
-    public void isHit()
+    public void isBlockBuster()
     {
-      //Movie data;
-      Random rd = new Random();
-      boolean bool = rd.nextBoolean();
-      String isBlockBuster = String.valueOf(bool);
-      System.out.println("Movie is a blockbuster:----->\t"+isBlockBuster+"\n");
+        System.out.println("<------Blockbuster------>");
+        for(Movie data : list)
+        {
+             System.out.println(data.name+"\t"+data.blockbuster);
+        }
     }
     //Display cost of production
     public void getCostOfProduction(String movieType)

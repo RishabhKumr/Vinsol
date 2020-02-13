@@ -5,12 +5,15 @@ public class User
     {
         //Movie data1;
         MovieApp mv = new MovieApp();
+	while(true)
+	{
         Scanner sc = new Scanner(System.in);
         System.out.println("-------Menu--------");
         System.out.println("(1) Display All Movie List");
         System.out.println("(2) Display Typewise List");
         System.out.println("(3) Check the free food");
         System.out.println("(4) Check the Cost of Production");
+	System.out.println("(5) Check whether the movie is block");
         int option = sc.nextInt();
         switch(option)
         {
@@ -32,6 +35,13 @@ public class User
                 Scanner sc3 = new Scanner(System.in);
                 String s2 = sc3.nextLine();
                 mv.getCostOfProduction(s2);
+		break;
+	    case 5:
+		mv.isBlockBuster();
+		break;
+	    case 6:
+		return;
+	}
             
         }
     }
