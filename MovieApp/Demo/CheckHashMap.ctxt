@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=CheckHashMap
+comment1.params=
+comment1.target=CheckHashMap()
+comment2.params=key\ value
+comment2.target=void\ push(int,\ int)
+comment3.params=
+comment3.target=void\ print()
+comment4.params=key
+comment4.target=boolean\ checkKey(int)
+comment5.params=key
+comment5.target=int\ getValue(int)
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

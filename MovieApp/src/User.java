@@ -24,7 +24,8 @@ public class User
                 System.out.println("Enter your choice to getfood:-");
                 Scanner sc1 = new Scanner(System.in);
                 String s = sc1.nextLine();
-                mv.getfood(s);
+                String food  = mv.getFood(s);
+		System.out.println(food);
                 break;
             case 4:
                 System.out.println("Enter the type of Movie");

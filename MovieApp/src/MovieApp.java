@@ -1,7 +1,7 @@
 import java.util.*;
 class MovieApp
 {   
-    foodType food;
+    FoodType food;
     LinkedList<Movie> list = new LinkedList<Movie>();
     LinkedList<String> bollywood_list,hollywood_list,tollywood_list;
     MovieApp()
@@ -17,23 +17,23 @@ class MovieApp
         System.out.println("Movie Name\tMovie Type");
         for(Movie data : list)
         {
-           System.out.println(data.name+"\t"+data.MovieType);
+           System.out.println(data.name+"\t"+data.movieType);
         }
      }
      //Display the food available for each type 
-     public void getfood(String MovieType)
+     public String getFood(String movieType)
      {
          
-        foodType tempFood = null;
-        if(MovieType.equals("Tollywood"))
+        FoodType tempFood = null;
+        if(movieType.equals("Tollywood"))
         {
              tempFood = food.Dosa;
         }
-        else if(MovieType.equals("Bollywood"))
+        else if(movieType.equals("Bollywood"))
         {
              tempFood = food.Dal_Makhni;
         }
-        else if(MovieType.equals("Hollywood"))
+        else if(movieType.equals("Hollywood"))
         {
             tempFood = food.Pepper_Stack;
         }
@@ -41,7 +41,8 @@ class MovieApp
         {
             tempFood = null;
         }
-        System.out.println(tempFood);
+        String food  = tempFood.toString();
+	return food;
     }
     //Display MovieList Type wise
     public void displayTypeWise()
@@ -51,15 +52,15 @@ class MovieApp
         tollywood_list=new LinkedList<String>();
         for(Movie data : list)
         {
-            if(data.MovieType.equals("Bollywood"))
+            if(data.movieType.equals("Bollywood"))
             {
                 bollywood_list.add(data.name);
             }
-            else if(data.MovieType.equals("Hollywood"))
+            else if(data.movieType.equals("Hollywood"))
             {
                 hollywood_list.add(data.name);
             }
-            else if(data.MovieType.equals("Tollywood"))
+            else if(data.movieType.equals("Tollywood"))
             {
                 tollywood_list.add(data.name);
             }
@@ -93,18 +94,18 @@ class MovieApp
       System.out.println("Movie is a blockbuster:----->\t"+isBlockBuster+"\n");
     }
     //Display cost of production
-    public void getCostOfProduction(String MovieType)
+    public void getCostOfProduction(String movieType)
     {
         CostOfProduction tempCost = null;
-        if(MovieType.equals("Tollywood"))
+        if(movieType.equals("Tollywood"))
         {
             tempCost = CostOfProduction.Low;
         }
-        else if(MovieType.equals("Bollywood"))
+        else if(movieType.equals("Bollywood"))
         {
             tempCost = CostOfProduction.Medium;
         }
-        else if(MovieType.equals("Hollywood"))
+        else if(movieType.equals("Hollywood"))
         {
             tempCost = CostOfProduction.High;
         }

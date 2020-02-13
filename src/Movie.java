@@ -4,18 +4,22 @@ public class Movie
     protected String year;
     protected String language;
     protected String genre;
-    protected String Rdate;
-    protected String MovieType;
+    protected String releaseDate;
+    protected String movieType;
+    boolean blockbuster;
     Movie()
     {
     }
-    Movie(String n,String y,String l,String g,String Rd,String mt)
+ 
+    Movie(String name,String year,String language,String genre,String releaseDate,String movieType,boolean blockbuster)
     {
-        name = n;
-        year = y;
-        language = l;
-        genre = g;
-        Rdate = Rd;
-        MovieType = mt;
+        this.name = name;
+        this.year = year;
+        this.language = language;
+        this.genre = genre;
+        this.releaseDate = releaseDate;
+        this.movieType = movieType;
+        this.blockbuster = blockbuster;
     }
+    
 }

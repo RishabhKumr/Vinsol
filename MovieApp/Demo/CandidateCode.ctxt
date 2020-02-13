@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=CandidateCode
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ \ \ public\ int\ getit(String\ s,String\ m)\n\ \ \ {\n\ \ \ \ \ \ int\ count\ \=\ 0;\n\ \ \ \ \ \ if(s.contains(m))\n\ \ \ \ \ \ {\n\ \ \ \ \ \ \ \ \ count++;\n\ \ \ \ \ \ }\n\ \ \ \ \ return\ count;\n\ \ \ }\n
+numComments=2
