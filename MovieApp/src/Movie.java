@@ -6,15 +6,11 @@ public class Movie
     protected String genre;
     protected String releaseDate;
     protected String movieType;
-    Movie
+    boolean blockbuster;
+    Movie()
     {
     }
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> 88f1f9a62cfcfbb947fc1e0a4c7f7224cb99934f
-    Movie(String name,String year,String language,String genre,String releaseDate,String movieType)
+    Movie(String name,String year,String language,String genre,String releaseDate,String movieType,boolean blockbuster)
     {
         this.name = name;
         this.year = year;
@@ -22,6 +18,7 @@ public class Movie
         this.genre = genre;
         this.releaseDate = releaseDate;
         this.movieType = movieType;
+	this.blockbuster = blockbuster;
     }
     
 }
