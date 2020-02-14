@@ -1,37 +1,29 @@
 import java.util.*;
 import java.util.Scanner;
-public class Sample
+public class Stack
 {
     List<String> lst;
-    Sample()
+    Stack()
     {
         lst = new ArrayList<String>();
     }
     public String peek()
     {
-        String a =  lst.get(lst.size() - 1);
-        return a;
+        return  lst.get(lst.size() - 1);
     }  
     public void push(String data)
     {
         lst.add(data);
     }
-    public boolean getEmpty()
+    public boolean isEmpty()
     {
-        if(lst.isEmpty())
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+       return lst.isEmpty();
     }
     public String pop() {
-         if (!getEmpty()) {
-              String getElement  = lst.get(lst.size() - 1);
+         if (!isEmpty()) {
+              String value  = lst.get(lst.size() - 1);
               lst.remove(lst.size() - 1);             
-              return getElement;
+              return value;
          } 
          else
          {
@@ -40,7 +32,7 @@ public class Sample
     }
     public static void main(String args[])
     {
-        Sample s = new Sample();
+        Stack s = new Stack();
         s.push("Hello");
         s.push("World");
         System.out.println("Enter your choice");
@@ -63,7 +55,7 @@ public class Sample
             
             break;
             case 3:
-            System.out.println("Check empty stack:-"+s.getEmpty());
+            System.out.println("Check empty stack:-"+s.isEmpty());
             break;
             case 4:
             Scanner sc1  = new Scanner(System.in);
