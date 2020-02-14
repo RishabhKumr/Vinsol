@@ -20,15 +20,8 @@ public class Stack
        return lst.isEmpty();
     }
     public String pop() {
-         if (!isEmpty()) {
-              String value  = lst.get(lst.size() - 1);
-              lst.remove(lst.size() - 1);             
-              return value;
-         } 
-         else
-         {
-              return null;
-         }
+	 String value = null;
+	 return  value = (!isEmpty())?lst.get(lst.size()-1):null;
     }
     public static void main(String args[])
     {
